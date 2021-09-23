@@ -2272,8 +2272,8 @@ readMathMLFromString (const char *xml)
     needDelete = true;
   }
 
-  XMLInputStream stream(xmlstr_c, false);
   SBMLErrorLog   log;
+  XMLInputStream stream(xmlstr_c, false);
 
   stream.setErrorLog(&log);
   //SBMLNamespaces sbmlns;
